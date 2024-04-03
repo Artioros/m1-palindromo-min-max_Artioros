@@ -52,4 +52,4 @@ function arrayMaxMin(arr){
     return [min,max]
 }
 
-console.log(arrayMaxMin([1,52,59,16,13,9]))
+arrayMaxMin()
