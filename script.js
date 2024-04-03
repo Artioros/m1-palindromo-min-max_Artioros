@@ -37,8 +37,8 @@
 // isPalindrome('A torre da derrota')
 
 function arrayMaxMin(arr){
-    let max = 0
-    let min = 0
+    let max = 1
+    let min = 1
 
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] > max) {
