@@ -49,8 +49,8 @@ function arrayMaxMin(arr){
         }
     }
 
-    arr.unshift(min)
-    arr.push(max)
+    arr.splice(0,1,min)
+    arr.splice(arr.length-1,1,max)
     return arr
 }
 
