@@ -1,4 +1,3 @@
-
 function isPalindrome(str){
     let verdadeiro = false
     
