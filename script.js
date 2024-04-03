@@ -49,9 +49,7 @@ function arrayMaxMin(arr){
         }
     }
 
-    arr.splice(0,1,min)
-    arr.splice(arr.length-1,1,max)
-    return arr
+    return [min,max]
 }
 
 console.log(arrayMaxMin([1,52,59,16,13,9]))
