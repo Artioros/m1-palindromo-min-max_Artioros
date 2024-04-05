@@ -37,10 +37,10 @@ function isPalindrome(str){
 isPalindrome('A torre da derrota')
 
 function arrayMaxMin(arr){
-    let max = arr[0]
+    let max = 0
     let min = arr[0]
 
-    for (let i = 1; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] > max) {
             max = arr[i]
         }
