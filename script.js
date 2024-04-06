@@ -1,40 +1,30 @@
 function isPalindrome(str){
     let verdadeiro = false
+    str = str.toLowerCase()
+    str = str.replace(/\s/g,'')
     
-    function invertePalavras (str) {
-        str = str.toLowerCase()
-        str = str.replace(/\s/g,'')
-        let arr = str.split('')
-        let palavra = ''
+    let arr = str.split('')
+    let palavra = ''
         
-        for (let i = arr.length - 1; i >= 0 ; i--) {
-            palavra += arr[i]
-        }
-        
-        return palavra
+    for (let i = arr.length - 1; i >= 0 ; i--) {
+        palavra += arr[i]
+    }
+       
+    let arr2 = str.split('')
+    let palavra2 = ''
+    
+    for (let i = 0; i < arr2.length; i++) {
+        palavra2 += arr2[i]
     }
     
-    function palavras (str) {
-        str = str.toLowerCase()
-        str = str.replace(/\s/g,'')
-        let arr = str.split('')
-        let palavra = ''
-    
-        for (let i = 0; i < arr.length; i++) {
-                palavra += arr[i]
-        }
-    
-        return palavra
-    }
-    
-    if (invertePalavras(str) === palavras(str)) {
-            verdadeiro = true
+    if (palavra === palavra2) {
+        verdadeiro = true
     }
     
     return verdadeiro
 }
 
-isPalindrome('A torre da derrota')
+isPalindrome()
 
 function arrayMaxMin(arr){
     let max = 0
@@ -52,4 +42,4 @@ function arrayMaxMin(arr){
     return [min,max]
 }
 
-arrayMaxMin()
+(arrayMaxMin())
